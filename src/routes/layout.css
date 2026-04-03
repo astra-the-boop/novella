@@ -1,3 +1,52 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,700;1,6..72,400&family=Anonymous+Pro:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap');
+
+@font-face {
+	font-family: 'Glyseric';
+	src: url('/fonts/Glyseric.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Phantom Sans';
+	src:
+		url('/fonts/PhantomSans.woff2') format('woff2'),
+		url('/fonts/PhantomSans.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+:root {
+	--color-bg: #1c1c1a;
+	--color-bg-card: #282828;
+	--color-bg-card-alt: #222034;
+	--color-text: #ffffff;
+	--color-text-secondary: #eeeeee;
+	--color-text-muted: #dddddd;
+	--color-text-dim: #aaaaaa;
+	--color-text-faint: #888888;
+	--color-accent: #ec3750;
+	--color-accent-dark: #c83430;
+	--color-accent-pink: #ff83fa;
+	--color-overlay-subtle: rgba(255, 255, 255, 0.05);
+	--color-overlay-light: rgba(255, 255, 255, 0.1);
+	--color-overlay-medium: rgba(255, 255, 255, 0.35);
+	--color-overlay-heavy: rgba(255, 255, 255, 0.6);
+
+	--font-display: 'Glyseric', 'Newsreader', 'Young Serif', 'PT Serif', Georgia, serif;
+	--font-serif: 'Young Serif', 'PT Serif', Georgia, serif;
+	--font-body: 'Phantom Sans', 'Inter', system-ui, sans-serif;
+	--font-mono: 'Anonymous Pro', monospace;
+}
+
+body {
+	background-color: var(--color-bg);
+	color: var(--color-text);
+	font-family: var(--font-body);
+}
