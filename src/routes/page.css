@@ -10,7 +10,8 @@
 	background: transparent !important;
 }
 
-html, body {
+html,
+body {
 	-ms-overflow-style: none;
 	scrollbar-width: none;
 }
@@ -163,8 +164,8 @@ body {
 }
 
 .typing-text {
-	font-family: "Glyseric";
-  font-weight: 600;
+	font-family: 'Glyseric';
+	font-weight: 600;
 	font-size: clamp(1.25rem, 3vw, 2.25rem);
 	max-width: 60ch;
 	text-align: center;
@@ -198,7 +199,7 @@ body {
 }
 
 .fellowship-body {
-	font-family: "Glyseric";
+	font-family: 'Glyseric';
 	font-size: clamp(1rem, 2.5vw, 1.75rem);
 	max-width: 60ch;
 	text-align: center;

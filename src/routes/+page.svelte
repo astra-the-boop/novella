@@ -1,9 +1,10 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { carouselImages } from '$lib/carousel';
+	import { bottomCarouselImages, topCarouselImages } from '$lib/carousel';
 	import './page.css';
 
-	const stripImages = [...carouselImages, ...carouselImages];
+	const topStripImages = [...topCarouselImages, ...topCarouselImages];
+	const bottomStripImages = [...bottomCarouselImages, ...bottomCarouselImages];
 
 	let topStripA: HTMLDivElement | undefined;
 	let topStripB: HTMLDivElement | undefined;
@@ -143,13 +144,13 @@
 			// Top carousel slides up, bottom carousel fades out: progress 0.85→1.0
 			const carouselProgress = Math.max(0, Math.min(1, (progress - 0.85) / 0.15));
 			if (carouselTop) {
-        carouselTop.style.transform = `translateY(${-carouselProgress * 110}%)`;
-        carouselTop.style.opacity = String(1 - carouselProgress);
-      }
+				carouselTop.style.transform = `translateY(${-carouselProgress * 110}%)`;
+				carouselTop.style.opacity = String(1 - carouselProgress);
+			}
 			if (carouselBottom) {
-        carouselBottom.style.transform = `translateY(${carouselProgress * 100}%)`;
-        carouselBottom.style.opacity = String(1 - carouselProgress);
-      }
+				carouselBottom.style.transform = `translateY(${carouselProgress * 100}%)`;
+				carouselBottom.style.opacity = String(1 - carouselProgress);
+			}
 		};
 
 		window.addEventListener('scroll', onScroll, { passive: true });
@@ -163,14 +164,14 @@
 	<div class="carousel-page">
 		<div class="carousel-viewport carousel-top">
 			<div class="teleport-strip" bind:this={topStripA}>
-				{#each stripImages as src, index (`top-a-${index}`)}
+				{#each topStripImages as src, index (`top-a-${index}`)}
 					<div class="image-card">
 						<img {src} alt="Carousel item" draggable="false" />
 					</div>
 				{/each}
 			</div>
 			<div class="teleport-strip" bind:this={topStripB} aria-hidden="true">
-				{#each stripImages as src, index (`top-b-${index}`)}
+				{#each topStripImages as src, index (`top-b-${index}`)}
 					<div class="image-card">
 						<img {src} alt="Carousel item" draggable="false" />
 					</div>
@@ -192,14 +193,14 @@
 
 		<div class="carousel-viewport carousel-bottom">
 			<div class="teleport-strip" bind:this={bottomStripA}>
-				{#each stripImages as src, index (`bottom-a-${index}`)}
+				{#each bottomStripImages as src, index (`bottom-a-${index}`)}
 					<div class="image-card">
 						<img {src} alt="Carousel item" draggable="false" />
 					</div>
 				{/each}
 			</div>
 			<div class="teleport-strip" bind:this={bottomStripB} aria-hidden="true">
-				{#each stripImages as src, index (`bottom-b-${index}`)}
+				{#each bottomStripImages as src, index (`bottom-b-${index}`)}
 					<div class="image-card">
 						<img {src} alt="Carousel item" draggable="false" />
 					</div>
@@ -221,13 +222,16 @@
 <section class="fellowship-section">
 	<h2 class="fellowship-title">Introducing the Hack Club Media Gap Year Fellowship</h2>
 	<p class="fellowship-body">
-		This is a paid full-time in person role. $50k/year + all travel covered + healthcare & benefits. It's intended to be something you do for a year before you go to college or
-		whatever your plans are after high school, but if you are on an alternate schooling path that
-		works too!<br><br>You will be spending time at Hack Club HQ, working on projects and making videos with the team, as well as travelling all over the world to different
-		Hack Club events!<br><br><strong>The job:</strong> Make Hack Club a household name. Reach new audiences and as many teens as you can.
+		This is a paid full-time in person role. $50k/year + all travel covered + healthcare & benefits.
+		It's intended to be something you do for a year before you go to college or whatever your plans
+		are after high school, but if you are on an alternate schooling path that works too!<br /><br
+		/>You will be spending time at Hack Club HQ, working on projects and making videos with the
+		team, as well as travelling all over the world to different Hack Club events!<br /><br /><strong
+			>The job:</strong
+		> Make Hack Club a household name. Reach new audiences and as many teens as you can.
 	</p>
-  <br>
-  <div class="button">
-					<a id="applyButton" href="https://example.com">Apply Now (x days remaining)</a>
-				</div>
+	<br />
+	<div class="button">
+		<a id="applyButton" href="https://example.com">Apply Now (x days remaining)</a>
+	</div>
 </section>
