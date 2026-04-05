@@ -192,11 +192,41 @@ body {
 	background: var(--color-bg);
 }
 
-.fellowship-title {
+.title {
 	font-family: var(--font-serif);
 	font-size: clamp(1rem, 3vw, 3rem);
 	color: var(--color-accent);
-	text-align: center;
+}
+
+.hwyd-section {
+	margin: auto;
+	width: 80vw;
+}
+
+.hwyd-panel {
+	width: 100%;
+	display: flex;
+}
+
+.panel-text {
+	width: 50%;
+}
+
+.right {
+	text-align: right;
+	justify-content: flex-end;
+}
+
+.stitle {
+	font-size: clamp(1.25rem, 3vw, 2.25rem);
+	color: var(--color-text);
+	font-family: var(--font-serif);
+}
+
+.sbody {
+	font-family: 'Glyseric';
+	font-size: clamp(1rem, 1vw, 1.5rem);
+	color: var(--color-text-dim);
 }
 
 .fellowship-body {

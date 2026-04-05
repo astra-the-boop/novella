@@ -289,7 +289,7 @@
 </div>
 
 <section class="fellowship-section">
-	<h2 class="fellowship-title">Introducing the Hack Club Media Gap Year Fellowship</h2>
+	<h2 class="title">Introducing the Hack Club Media Gap Year Fellowship</h2>
 	<p class="fellowship-body">
 		This is a paid full-time in person role. $50k/year + all travel covered + healthcare & benefits.
 		It's intended to be something you do for a year before you go to college or whatever your plans
@@ -302,5 +302,15 @@
 	<br />
 	<div class="button">
 		<a id="applyButton" href="https://example.com">Apply Now (x days remaining)</a>
+	</div>
+</section>
+
+<section class="hwyd-section">
+	<h2 class="title">Here's what you'll do.</h2>
+	<div class="hwyd-panel right">
+		<div class="panel-text">
+			<h3 class="stitle">Travel to Hack Club events</h3>
+			<p class="sbody">Hack Club hosts hundreds of events across the globe every year. You'll promote, attend, document, and create content for them.</p>
+		</div>
 	</div>
 </section>
