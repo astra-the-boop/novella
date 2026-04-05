@@ -145,9 +145,8 @@
 		{ type: 'word', text: "We're" },
 		{ type: 'word', text: 'looking' },
 		{ type: 'word', text: 'for' },
-		{ type: 'word', text: 'a' },
-		{ type: 'word', text: 'storyteller', bold: true, accent: true},
-		{ type: 'word', text: '— someone'},
+		{ type: 'word', text: 'storytellers', bold: true, accent: true},
+		{ type: 'word', text: '— people'},
 		{ type: 'word', text: 'who' },
 		{ type: 'word', text: 'can' },
 		{ type: 'word', text: 'use' },
@@ -197,7 +196,6 @@
 				const start = (i / (total - 1)) * (1 - fadeWindow);
 				const wp = Math.max(0, Math.min(1, (wordProgress - start) / fadeWindow));
 				word.style.opacity = String(wp);
-				word.style.top = `${(1 - wp) * 10}px`;
 
 				// Trigger underline draw once the span is mostly faded in
 				if (word.classList.contains('typing-underline')) {
