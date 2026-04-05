@@ -123,6 +123,15 @@ body {
 	font-family: Glyseric;
 }
 
+.hero-flag {
+	display: block;
+	width: clamp(44px, 7vw, 180px);
+	height: auto;
+	margin: 0 auto clamp(0.5rem, 1.2vh, 0.85rem);
+	user-select: none;
+	pointer-events: none;
+}
+
 .button {
 	display: flex;
 	flex-direction: column;
@@ -133,7 +142,6 @@ body {
 
 #title {
 	font-size: clamp(24px, 6vh, 75px);
-	color: var(--color-text-dim);
 	font-weight: bold;
 	font-family: 'Young Serif';
 	text-align: center;
@@ -144,6 +152,7 @@ body {
 	overflow-wrap: anywhere;
 	font-size: clamp(16px, 3vh, 35px);
 	text-align: center;
+	color: var(--color-text-dim);
 }
 
 #applyButton {

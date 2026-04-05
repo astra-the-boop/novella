@@ -255,6 +255,12 @@
 		<div class="herocontainer">
 			<div class="hero">
 				<div class="text">
+					<img
+						class="hero-flag"
+						src="https://cdn.hackclub.com/019d5fd7-0e18-76e5-bd56-5ce00ae54238/flag.svg"
+						alt="Hack Club flag"
+						draggable="false"
+					/>
 					<h1 id="title">tell our stories.</h1>
 					<p id="body">
 						Hack Club is hiring 2 teenagers for a paid gap year to create videos, films, and other
