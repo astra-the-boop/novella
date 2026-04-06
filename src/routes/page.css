@@ -263,7 +263,7 @@ body {
 .panel-img {
 	flex: 1;
 	max-width: 50%;
-	height: auto; /* let the image determine its own height */
+	height: auto;
 	display: block;
 }
 
