@@ -159,7 +159,7 @@
 		{ type: 'word', text: 'looking' },
 		{ type: 'word', text: 'for' },
 		{ type: 'word', text: 'storytellers', bold: true, accent: true },
-		{ type: 'word', text: '— people' },
+		{ type: 'word', text: '- people' },
 		{ type: 'word', text: 'who' },
 		{ type: 'word', text: 'can' },
 		{ type: 'word', text: 'use' },
@@ -170,7 +170,7 @@
 		{ type: 'word', text: 'window' },
 		{ type: 'word', text: 'into' },
 		{ type: 'word', text: 'our' },
-		{ type: 'word', text: 'world —' },
+		{ type: 'word', text: 'world -' },
 		{ type: 'word', text: 'and' },
 		{ type: 'word', text: "we're" },
 		{ type: 'word', text: 'looking' },
@@ -198,7 +198,6 @@
 			const scrollableHeight = rect.height - window.innerHeight;
 			const progress = Math.max(0, Math.min(1, -rect.top / scrollableHeight));
 
-			// Hero text fades out: progress 0.2→0.38
 			const heroFade = Math.max(0, Math.min(1, (progress - 0.1) / 0.18));
 			if (heroEl) heroEl.style.opacity = String(1 - heroFade);
 			scrollDownEl.style.pointerEvents = heroFade > 0 ? 'none' : 'auto';
@@ -263,8 +262,7 @@
 					/>
 					<h1 id="title">tell our stories.</h1>
 					<p id="body">
-						Hack Club is hiring 2 teenagers for a paid gap year to create videos, films, and other
-						content for Hack Club's social media.
+						Hack Club is hiring 2 teenagers to record the stories of the next generation of <strong style="font-weight: 900; color: #ec3750;">hackers</strong>.
 					</p>
 				</div>
 				<p id="scroll-down">Scroll down to read <span id="scroll-down-arrow">↓</span></p>
@@ -361,7 +359,7 @@
 		<div class="panel-text right">
 			<h3 class="stitle">Get mentored by Open Sauce creators</h3>
 			<p class="sbody">
-				Work directly with creators from Open Sauce — including Michael Reeves and William Osman —
+				Work directly with creators from Open Sauce - including Michael Reeves and William Osman -
 				receiving hands-on mentorship while collaborating on content.
 			</p>
 		</div>
