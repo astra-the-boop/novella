@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { fade } from 'svelte/transition';
 	import { bottomCarouselImages, topCarouselImages } from '$lib/carousel';
 	import './page.css';
 
@@ -282,9 +283,14 @@
 						<strong class="hero-highlight"
 							>{#key heroHighlightWordIndex}<span
 								class="hero-highlight-word"
+								in:fade={{ duration: 350 }}
+								out:fade={{ duration: 350 }}
 							>{HERO_HIGHLIGHT_WORDS[heroHighlightWordIndex]}.</span>{/key}</strong
 						>
 					</p>
+				</div>
+				<div class="button">
+					<a style="margin-top: 2vh;" id="applyButton" href="https://example.com">Apply Now ({daysUntilDue} days remaining)</a>
 				</div>
 				<p id="scroll-down">Scroll down to read <span id="scroll-down-arrow">↓</span></p>
 			</div>
