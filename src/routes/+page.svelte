@@ -303,9 +303,8 @@
 				<div class="button">
 					<a
 						style="margin-top: 2vh;"
-						id="applyButton"
 						href="https://forms.hackclub.com/mediafellowship"
-						>Apply Now ({daysUntilDue} days remaining)</a
+						class="apply-button">Apply Now ({daysUntilDue} days remaining)</a
 					>
 				</div>
 				<p id="scroll-down">Scroll down to read <span id="scroll-down-arrow">↓</span></p>
@@ -350,19 +349,71 @@
 <section class="fellowship-section">
 	<h2 class="title">Introducing the Hack Club Media Gap Year Fellowship</h2>
 	<p class="fellowship-body">
-		This is a paid, full-time, in-person role. $50k/year + all travel covered + healthcare & benefits.
-		It's intended to be something you do for a year before you go to college or whatever your plans
-		are after high school, but if you are on an alternate schooling path, that works too!<br /><br
-		/>You will be spending time at Hack Club HQ, working on projects and making videos with the
-		team, as well as travelling all over the world to different Hack Club events!<br /><br /><strong
-			>The job:</strong
-		> Make Hack Club a household name. Reach new audiences and as many teens as you can.
+		This is a paid, full-time, in-person role. $50k/year + all travel covered + healthcare &
+		benefits. It's intended to be something you do for a year before you go to college or whatever
+		your plans are after high school, but if you are on an alternate schooling path, that works too!<br
+		/><br />You will be spending time at Hack Club HQ, working on projects and making videos with
+		the team, as well as travelling all over the world to different Hack Club events!<br /><br
+		/><strong>The job:</strong> Make Hack Club a household name. Reach new audiences and as many teens
+		as you can.
 	</p>
 	<div class="button">
-		<a id="applyButton" href="https://forms.hackclub.com/mediafellowship"
+		<a href="https://forms.hackclub.com/mediafellowship" class="apply-button"
 			>Apply Now ({daysUntilDue} days remaining)</a
 		>
 	</div>
+</section>
+
+<section class="hack-club-section">
+	<h2 class="title">So what is Hack Club?</h2>
+	<p class="hc-body">
+		We are a 501(c)(3) global non-profit organization based in the U.S. aimed at supporting
+		teenagers worldwide interested in engineering and coding to develop and grow. In the past we've
+		... [PLACEHOLDER]
+	</p>
+	<div class="button-container">
+		<div class="button">
+			<a id="linkButton" href="https://www.youtube.com/channel/UCQzO0jpcRkP-9eWKMpJyB0w"><svg fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414" xmlns="http://www.w3.org/2000/svg" aria-label="youtube" viewBox="0 0 32 32" preserveAspectRatio="xMidYMid meet" fill="currentColor" width="48" height="48" title="youtube"><path d="M20.0065 15.7665L13.5265 19.1265L13.522 12.384L20.0065 15.7665Z"></path><path d="M15.7501 6C20.8501 6 22.9971 6.576 24.0861 7.665C25.1751 8.754 25.7501 10.9 25.7501 16C25.7501 21.1 25.1751 23.247 24.0861 24.336C22.9971 25.425 20.8501 26 15.7501 26C10.6501 26 8.50306 25.425 7.41406 24.336C6.32506 23.247 5.75006 21.1 5.75006 16C5.75006 10.9 6.32506 8.753 7.41406 7.665C8.50306 6.576 10.6501 6 15.7501 6ZM27.7501 16C27.7501 6 25.7501 4 15.7501 4C5.75006 4 3.75006 6 3.75006 16C3.75006 26 5.75006 28 15.7501 28C25.7501 28 27.7501 26 27.7501 16Z"></path></svg></a>
+		</div>
+		<div class="button">
+			<a id="linkButton" href="https://www.instagram.com/starthackclub/"><svg fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414" xmlns="http://www.w3.org/2000/svg" aria-label="instagram" viewBox="0 0 32 32" preserveAspectRatio="xMidYMid meet" fill="currentColor" width="48" height="48" title="instagram"><path d="M16 6c5.1 0 7.247.575 8.336 1.664C25.425 8.753 26 10.9 26 16s-.575 7.247-1.664 8.336C23.247 25.425 21.1 26 16 26s-7.247-.575-8.336-1.664C6.575 23.247 6 21.1 6 16s.575-7.247 1.664-8.336C8.753 6.575 10.9 6 16 6zm0-2c10 0 12 2 12 12s-2 12-12 12S4 26 4 16 6 4 16 4z"></path><path d="M16 9.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 1 0 0-12.324zM16 20a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm7.845-10.405a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0z"></path></svg></a>
+		</div>
+	</div>
+</section>
+
+<section class="past-events">
+	<h1 class="stitle">In the past year, we have organized [PLACEHOLDER]</h1>
+	<div class="programs-grid">
+		<a class="program-card" href="https://flagship.hackclub.com" target="_blank" rel="noopener">
+			<img class="program-card-img" src="https://cdn.hackclub.com/019d75da-13a0-755c-9260-3a7a839e6c2b/image.png" alt="Campfire Flagship" />
+			<img class="program-card-logo" src="https://cdn.hackclub.com/019d75d9-1b8c-780a-a990-1c6b65473906/image.png" alt="Campfire Flagship logo" />
+			<p class="program-card-desc">A 3 day flagship game jam in Los Angeles with YouTubers like Michael Reeves, William Osman, and many more!</p>
+		</a>
+
+		<a class="program-card" href="https://midnight.hackclub.com" target="_blank" rel="noopener">
+			<img class="program-card-img" src="https://manifesto.hackclub.com/images/midnight.jpg" alt="Midnight" />
+			<div class="midnight-logo">
+				<img class="front" src="https://manifesto.hackclub.com/images/midnight-logo.svg" alt="Midnight logo" />
+			</div>
+			<p class="program-card-desc">A murder-mystery hackathon held in Austria, Vienna with 60+ teenagers from all across the world!</p>
+		</a>
+
+		<a class="program-card" href="https://blueprint.hackclub.com" target="_blank" rel="noopener">
+			<img class="program-card-img" src="https://manifesto.hackclub.com/images/blueprint.png" alt="Blueprint" />
+			<img class="program-card-logo" src="https://cdn.hackclub.com/019d75da-1a49-739f-8e97-b3f6f15961ce/image.png" alt="Blueprint logo" style="width:300px" />
+			<p class="program-card-desc">From October 2025 to March 2026, Blueprint gave $140,000 to fund 1,500 hardware and electronics projects built by 1000 teenagers from 77 countries</p>
+		</a>
+
+		<a class="program-card" href="https://siege.hackclub.com" target="_blank" rel="noopener">
+			<img class="program-card-img" src="https://manifesto.hackclub.com/images/siege.png" alt="Siege" />
+			<img class="program-card-logo" src="https://cdn.hackclub.com/019d75da-1ce9-7d50-9a52-53aadbfdfce7/image.png" alt="Siege logo" style="width:161px" />
+			<p class="program-card-desc">A 14 week event where 250 teens created a project each week to work towards a laptop with over 100 framework laptops given out.</p>
+		</a>
+	</div>
+</section>
+
+<section class="blogs">
+
 </section>
 
 <section class="hwyd-section">
@@ -414,9 +465,14 @@
 <section class="cta-section">
 	<h1 class="title">The door is open.</h1>
 	<div class="button">
-		<a id="applyButton" href="https://forms.hackclub.com/mediafellowship"
+		<a href="https://forms.hackclub.com/mediafellowship" class="apply-button"
 			>Apply Now ({daysUntilDue} days remaining)</a
 		>
+	</div>
+	<div class="button-container">
+		<div class="button">
+			<a id="linkButton">Read the Hacker Novella ↗</a>
+		</div>
 	</div>
 </section>
 

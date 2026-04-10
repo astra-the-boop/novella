@@ -157,7 +157,7 @@
 	color: #ec3750;
 }
 
-#applyButton {
+.apply-button {
 	font-size: clamp(10px, 2vh, 25px);
 	background-color: var(--color-bg);
 	border-radius: 999999px;
@@ -169,7 +169,7 @@
 	border-color: #ffffff;
 }
 
-#applyButton:hover {
+.apply-button:hover {
 	color: var(--color-bg);
 	background-color: #ffffff;
 	border-color: #ffffff;
@@ -431,13 +431,43 @@ u:hover {
 }
 
 .cta-section .title {
-	font-size: clamp(24px, 6vh, 75px);
+	font-size: clamp(30px, 7vh, 75px);
 }
 
-.cta-section #applyButton {
-	margin-top: 1vh;
-	font-weight: bold;
-	color: #ec3750;
+.cta-section .apply-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: fit-content;
+	padding: 0 clamp(9px, 3vh, 20px);
+	height: clamp(10px, 10vh, 60px);
+	border: 2px solid #fff;
+	border-radius: 9999px;
+	font-size: clamp(10px, 3vh, 25px);
+	font-family: Glyseric, Newsreader, sans-serif;
+	color: #fff;
+	text-decoration: none;
+	transition:
+		background 0.5s,
+		color 0.5s;
+	margin-top: 2vh;
+}
+
+.cta-section .apply-button:hover {
+	color: var(--color-bg);
+	background-color: #ffffff;
+	border-color: #fff;
+}
+
+.button-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 2vw;
+}
+
+#linkButton {
+	color: var(--color-accent);
 	font-size: clamp(10px, 2vh, 25px);
 	background-color: var(--color-bg);
 	border-radius: 999999px;
@@ -446,11 +476,118 @@ u:hover {
 	transition:
 		background-color 0.5s,
 		color 0.5s;
-	border-color: #ec3750;
+	border-color: var(--color-accent);
+	margin-top: 1.5vh;
+	cursor: pointer;
 }
 
-.cta-section #applyButton:hover {
+#linkButton:hover {
 	color: var(--color-bg);
-	background-color: #ec3750;
-	border-color: #ec3750;
+	background-color: var(--color-accent);
+	border-color: var(--color-accent);
+}
+
+.hack-club-section {
+	font-family: 'Glyseric', 'serif';
+	min-height: 80dvh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 15vh clamp(1.5rem, 8vw, 12rem);
+	background: var(--color-bg);
+}
+
+.hc-body {
+	font-family: 'Glyseric';
+	font-size: clamp(1rem, 2.5vw, 1.75rem);
+	max-width: 60ch;
+	text-align: center;
+	color: var(--color-text-dim);
+	line-height: 1.6;
+}
+
+.hack-club-section .title {
+	margin-bottom: clamp(0.75rem, 2rem, 1.5rem);
+	text-align: center;
+	width: 100%;
+}
+
+.hack-club-section .hc-body {
+	margin-bottom: clamp(2rem, 5vh, 4rem);
+}
+
+.past-events{
+	margin: auto auto 10vh auto;
+	width: 80vw;
+	display: flex;
+	flex-direction: column;
+	gap: 8rem;
+}
+
+.past-events .stitle{
+	text-align: left;
+	color: var(--color-text-dim);
+	font-size: clamp(1.4rem, 2.7vw, 2.75rem);
+	margin-bottom: -3rem;
+}
+
+.programs-headline {
+	font-family: 'Young Serif', serif;
+	font-size: 30px;
+	color: #eee;
+	line-height: normal;
+	font-weight: normal;
+	margin: 0;
+	max-width: 1644px;
+	width: 100%;
+}
+
+.programs-headline .red {
+	color: #ec3750;
+}
+
+.programs-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 36px;
+	width: 100%;
+	max-width: 1644px;
+}
+
+.program-card {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	align-items: center;
+	text-decoration: none;
+	height: fit-content;
+}
+
+.program-card:hover .program-card-img {
+	transform: scale(1.03);
+	filter: brightness(1.1);
+}
+
+.program-card-img {
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+	display: block;
+	transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.program-card-logo {
+	height: 90px;
+	object-fit: contain;
+	filter: drop-shadow(0 0 80px rgba(255, 255, 255, 0.5));
+}
+
+.program-card-desc {
+	font-family: 'Glyseric', 'Newsreader', sans-serif;
+	font-size: 20px;
+	color: #fff;
+	line-height: normal;
+	margin: 0;
+	width: 100%;
 }
