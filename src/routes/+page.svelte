@@ -416,16 +416,16 @@
 	</div>
 	<p class="hc-body">
 		We are a 501(c)(3) global non-profit organization based in the United States. We create real
-		adventures, online programs, and provide community for technical teenagers. [To be continued]
+		adventures, online programs, and provide community for technical teenagers! Every year, our community creates thousands of projects, and we ship out thousands of prizes, including grants
 	</p>
 	<section class="videos-body">
 		<h1 class="title">Some videos we've posted before:</h1>
 		<div id="videos-container">
 			<iframe
-				id="undercity"
+				id="fallout"
 				width="560"
 				height="315"
-				src="https://www.youtube-nocookie.com/embed/kaEFv7e49mo?si=uYq4Ee3RWX6rqfBv&amp;controls=0"
+				src="https://www.youtube-nocookie.com/embed/SrP2ZeNHm6s?si=kxVdUXMkOMGhsxXS"
 				title="YouTube video player"
 				frameborder="0"
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -436,7 +436,7 @@
 				id="shipwrecked"
 				width="560"
 				height="315"
-				src="https://www.youtube-nocookie.com/embed/uXWMr0gdLJA?si=Vb4hK6MBO0E5RDWB&amp;controls=0"
+				src="https://www.youtube-nocookie.com/embed/uXWMr0gdLJA?si=Vb4hK6MBO0E5RDWB"
 				title="YouTube video player"
 				frameborder="0"
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
