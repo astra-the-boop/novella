@@ -9,7 +9,7 @@
 
 	const DUE_YEAR: number = 2026;
 	const DUE_MONTH: number = 4;
-	const DUE_DAY: number = 24;
+	const DUE_DAY: number = 30;
 
 	const dueDate: Date = new Date(DUE_YEAR, DUE_MONTH - 1, DUE_DAY);
 	const daysUntilDue: number = Math.ceil((dueDate.getTime() - Date.now()) / 86400000);
@@ -142,11 +142,11 @@
 	type Token =
 		| { type: 'word'; text: string; bold?: boolean; accent?: boolean }
 		| { type: 'break' }
-		| { type: 'underline'; text: string };
+		| { type: 'underline'; text: string }
+		| { type: 'link'; text: string; href: string };
 
 	const TYPING_TOKENS: Token[] = [
-		{ type: 'word', text: 'Hack' },
-		{ type: 'word', text: 'Club' },
+		{ type: 'link', text: 'Hack Club', href: 'https://hackclub.com' },
 		{ type: 'word', text: 'is' },
 		{ type: 'word', text: 'an' },
 		{ type: 'word', text: 'international' },
@@ -286,10 +286,10 @@
 							/>
 							<h1 id="title">tell our stories.</h1>
 							<p id="body">
-								Hack Club is hiring 2 teenagers to record the stories
+								Hack Club is hiring 2 teenage filmmakers to travel the world making films about the next generation of
 								<span class="hero-body-crossfade-wrapper">
 									<span class="hero-body-crossfade hero-body-crossfade-sizer" aria-hidden="true">
-										of the next generation of <strong class="hero-highlight"
+										<strong class="hero-highlight"
 											>{HERO_HIGHLIGHT_WORDS.reduce((a, b) =>
 												a.length >= b.length ? a : b
 											)}.</strong
@@ -301,13 +301,14 @@
 											in:fade={{ duration: 350 }}
 											out:fade={{ duration: 350 }}
 										>
-											of the next generation of <strong class="hero-highlight"
+											<strong class="hero-highlight"
 												>{HERO_HIGHLIGHT_WORDS[heroHighlightWordIndex]}.</strong
 											>
 										</span>
 									{/key}
 								</span>
 							</p>
+							<p style="font-size: clamp(12px, 1.8vh, 22px); color: #aaa; letter-spacing: 0.05em; margin-top: 0.5em;">Full-time, in-person &middot; 1 year, $50,000 USD &middot; $10k travel + $5k equipment budget</p>
 						</div>
 						<div class="button">
 							<a
@@ -328,9 +329,7 @@
 							allowfullscreen
 						></iframe>
 						<figcaption class="hero-video-caption">
-							<a href="https://shiba.hackclub.com" target="_blank" rel="noopener noreferrer"
-								>Hack Club Shiba</a
-							> - Nov, 2025 in Tokyo, Japan
+							<a href="https://shiba.hackclub.com" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">Hack Club Shiba</a> - Nov, 2025 in Tokyo, Japan
 						</figcaption>
 					</figure>
 				</div>
@@ -359,6 +358,8 @@
 				{#each TYPING_TOKENS as token, i (i)}
 					{#if token.type === 'break'}
 						<br class="typing-word" />
+					{:else if token.type === 'link'}
+						<a class="typing-word" href={token.href} target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: inherit; pointer-events: auto;">{token.text}</a>{WORD_SEPARATOR}
 					{:else if token.type === 'underline'}
 						<span class="typing-word typing-underline">{token.text}</span>{WORD_SEPARATOR}
 					{:else if token.accent}
@@ -375,10 +376,12 @@
 <section class="fellowship-section">
 	<h2 class="title">Introducing the Hack Club Media Gap Year Fellowship</h2>
 	<p class="fellowship-body">
-		This is a paid, full-time, in-person role. $50k/year + $2k equipment/hardware stipend + all
-		travel covered + healthcare & benefits. It's intended to be something you do for a year before
+		This is a paid, full-time, in-person role. $50k/year + $5k equipment stipend + $10k travel + healthcare & benefits at Hack Club HQ in Burlington, Vermont.
+	</p>
+	<p class="fellowship-body">
+		It's intended to be something you do for a year before
 		you go to college or whatever your plans are after high school, but if you are on an alternate
-		schooling path, that works too!<br /><br />You will be spending time at Hack Club HQ, working on
+		schooling path, that works too!<br /><br />You will be based at Hack Club HQ, working on
 		projects and making videos with the team, as well as travelling all over the world to different
 		Hack Club events!<br /><br /><strong>The job:</strong> Make Hack Club a household name. Reach new
 		audiences and as many teens as you can.
@@ -443,7 +446,7 @@
 	<p class="hc-body">
 		We are a 501(c)(3) global non-profit organization based in the United States. We host real
 		adventures, run online programs, and provide community for technical teenagers! Every year, our
-		community creates thousands of amazing projects, and we ship out thousands of cool prizes, from
+		community creates <a href="https://magazine.hackclub.com" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">thousands of amazing projects</a>, and we ship out thousands of cool prizes, from
 		stickers to laptops to plushies of our mascot!
 	</p>
 	<section class="videos-body">
@@ -679,7 +682,7 @@
 </section>
 
 <section class="blogs">
-	<h1 class="stitle">Here's what people who've worked with us have to say:</h1>
+	<h1 class="stitle">Here's what Hack Clubbers have to say:</h1>
 	<a
 		href="https://journal.tongyu.fish/gapyear/"
 		target="_blank"
@@ -749,14 +752,13 @@
 	<div class="hwyd-panel">
 		<img
 			class="panel-img left"
-			alt="Michael Reeves that I stole off the internet"
-			src="https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/mykull_6.png"
+			alt="Hack Club gap year teenagers"
+			src="/gap-years.jpg"
 		/>
 		<div class="panel-text right">
-			<h3 class="stitle">Get mentored by Open Sauce creators</h3>
+			<h3 class="stitle">Join 40 other teenage gap years</h3>
 			<p class="sbody">
-				You'll work directly with creators from Open Sauce, like Michael Reeves and William Osman,
-				receiving hands-on mentorship and collaborating on content.
+				You'll join 40 technical teenage <a href="https://manifesto.hackclub.com" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: inherit;">gap years</a> from across the USA and world who design and run all of Hack Club's programs. Every program above was ran by 18 and 19 year old gap years at Hack Club.
 			</p>
 		</div>
 	</div>
