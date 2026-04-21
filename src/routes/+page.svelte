@@ -330,7 +330,7 @@
 							Scroll down to read <span class="scroll-down-arrow" id="scroll-down-arrow">↓</span>
 						</p>
 					</div>
-					<div>
+					<div class="hero-right">
 						<figure class="hero-video-figure">
 							<p class="hero-video-annotation">
 								made by <a

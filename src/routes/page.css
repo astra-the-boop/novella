@@ -247,6 +247,11 @@
 	min-width: 0;
 }
 
+.hero-right {
+	flex: 1;
+	min-width: 0;
+}
+
 .typing-overlay {
 	position: absolute;
 	inset: 0;
